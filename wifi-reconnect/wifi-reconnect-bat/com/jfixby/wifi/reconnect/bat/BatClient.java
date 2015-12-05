@@ -1,7 +1,5 @@
 package com.jfixby.wifi.reconnect.bat;
 
-import java.io.IOException;
-
 import com.jfixby.cmns.api.log.L;
 import com.jfixby.wifi.reconnect.ConnectionClient;
 import com.jfixby.wifi.reconnect.PingStatus;
