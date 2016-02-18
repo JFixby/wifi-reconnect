@@ -8,7 +8,7 @@ import com.jfixby.cmns.api.file.LocalFileSystem;
 import com.jfixby.cmns.api.json.Json;
 import com.jfixby.cmns.api.log.L;
 import com.jfixby.cmns.api.sys.Sys;
-import com.jfixby.cmns.desktop.DesktopAssembler;
+import com.jfixby.red.desktop.DesktopAssembler;
 import com.jfixby.wifi.reconnect.ConnectionClient;
 import com.jfixby.wifi.reconnect.PingStatus;
 import com.jfixby.wifi.reconnect.bat.BatClient;
