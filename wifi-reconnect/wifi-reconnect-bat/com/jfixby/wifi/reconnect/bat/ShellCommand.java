@@ -30,7 +30,7 @@ public class ShellCommand {
 	private String executeCommand(String command) {
 		L.d("executeCommand", command);
 
-		StringBuffer output = new StringBuffer();
+		StringBuilder  output = new StringBuilder ();
 
 		Process p;
 		try {
