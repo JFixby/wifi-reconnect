@@ -2,7 +2,7 @@ package com.jfixby.wifi.reconnect.run;
 
 import java.io.IOException;
 
-import com.jfixby.cmns.adopted.gdx.json.GdxJson;
+import com.jfixby.cmns.adopted.gdx.json.RedJson;
 import com.jfixby.cmns.api.file.File;
 import com.jfixby.cmns.api.file.LocalFileSystem;
 import com.jfixby.cmns.api.json.Json;
@@ -13,7 +13,7 @@ public class PrepareConfig {
 
 	public static void main(String[] args) throws IOException {
 		DesktopAssembler.setup();
-		Json.installComponent(new GdxJson());
+		Json.installComponent(new RedJson());
 
 		Config cfg = new Config();
 
@@ -22,7 +22,7 @@ public class PrepareConfig {
 		cfg.PING_COMMAND = "ping 127.0.0.1 -t";
 
 		File config_file = LocalFileSystem.ApplicationHome().child("config.cfg");
-		String data = Json.serializeToString(cfg);
+		String data = Json.serializeToString(cfg).toString();
 		config_file.writeString(data);
 
 		L.d(data);
