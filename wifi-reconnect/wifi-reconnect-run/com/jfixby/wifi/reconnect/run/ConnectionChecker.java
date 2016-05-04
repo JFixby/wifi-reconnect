@@ -8,7 +8,7 @@ import com.jfixby.cmns.api.file.LocalFileSystem;
 import com.jfixby.cmns.api.json.Json;
 import com.jfixby.cmns.api.log.L;
 import com.jfixby.cmns.api.sys.Sys;
-import com.jfixby.red.desktop.DesktopAssembler;
+import com.jfixby.red.desktop.DesktopSetup;
 import com.jfixby.wifi.reconnect.ConnectionClient;
 import com.jfixby.wifi.reconnect.PingStatus;
 import com.jfixby.wifi.reconnect.bat.BatClient;
@@ -16,7 +16,7 @@ import com.jfixby.wifi.reconnect.bat.BatClient;
 public class ConnectionChecker {
 
 	public static void main(String[] args) throws IOException {
-		DesktopAssembler.setup();
+		DesktopSetup.deploy();
 		Json.installComponent(new RedJson());
 
 		Config cfg = readConfig();
